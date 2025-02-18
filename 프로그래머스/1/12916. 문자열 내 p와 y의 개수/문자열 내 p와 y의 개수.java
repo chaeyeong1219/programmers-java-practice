@@ -15,6 +15,8 @@ class Solution {
         
         if (pCnt == yCnt)
             answer = true;
+        else if (pCnt == 0 && yCnt == 0)
+            answer = true;
         else 
             answer = false;
 
