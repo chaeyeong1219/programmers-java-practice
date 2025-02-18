@@ -7,7 +7,7 @@ class Solution {
         
         String[] sArr = String.valueOf(n).split("");
         Arrays.sort(sArr, Collections.reverseOrder());
-        
+    
         String sorted = String.join("", sArr);
         answer = Long.parseLong(sorted);
         return answer;
