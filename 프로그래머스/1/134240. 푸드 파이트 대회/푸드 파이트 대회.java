@@ -12,7 +12,7 @@ class Solution {
             }
         }  
 
-        String answer = sb.toString() + "0" + sb.reverse().toString();
+        String answer = sb.toString() + "0" + sb.reverse();
         
         return answer;
     }
