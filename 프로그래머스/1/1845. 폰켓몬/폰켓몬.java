@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Set;
+import java.util.HashSet;
 
 class Solution {
     public int solution(int[] nums) {
@@ -9,9 +10,7 @@ class Solution {
             nset.add(num);
         }
         
-        if (nset.size() <= nums.length / 2) 
-            return nset.size(); 
+        return nset.size() <= nums.length / 2 ? nset.size() : nums.length / 2;
         
-        return nums.length / 2;
     }
 }
