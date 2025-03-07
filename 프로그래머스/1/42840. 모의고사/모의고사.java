@@ -5,7 +5,6 @@ class Solution {
         int[] spj1 = {1, 2, 3, 4, 5};
         int[] spj2 = {2, 1, 2, 3, 2, 4, 2, 5};
         int[] spj3 = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
-        List<Integer> result = new ArrayList<>();
 
         Queue<Integer> q1 = new LinkedList<>();
         Queue<Integer> q2 = new LinkedList<>();
@@ -33,17 +32,12 @@ class Solution {
             q3.offer(q3.poll());
 
         }
-
+        
+        List<Integer> result = new ArrayList<>();
         int best = Math.max(cnt1, Math.max(cnt2, Math.max(cnt3, cnt3)));
-        if (best == cnt1) {
-            result.add(1);
-        }
-        if (best == cnt2) {
-            result.add(2);
-        }
-        if (best == cnt3) {
-            result.add(3);
-        }
+        if (best == cnt1) result.add(1);
+        if (best == cnt2) result.add(2);
+        if (best == cnt3) result.add(3);
         
         return result;
         
